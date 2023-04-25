@@ -37,10 +37,10 @@ function App() {
         { path: "/add", element: <Add /> },
         { path: "/messages", element: <Messages /> },
         { path: "/message/:id", element: <Message /> },
+        { path: "/register", element: <Register /> },
+        { path: "/login", element: <Login /> },
       ],
     },
-    { path: "/register", element: <Register /> },
-    { path: "/login", element: <Login /> },
   ]);
 
   return (
