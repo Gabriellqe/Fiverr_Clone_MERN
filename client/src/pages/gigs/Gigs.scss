@@ -34,6 +34,7 @@
         gap: 10px;
         color: #555;
         font-weight: 300;
+
         input {
           padding: 5px;
           border: 1px solid lightgrey;
@@ -55,11 +56,13 @@
           cursor: pointer;
         }
       }
+
       .right {
         position: relative;
         display: flex;
         align-items: center;
         gap: 10px;
+
         .sortBy {
           color: #555;
           font-weight: 300;
@@ -73,27 +76,28 @@
           width: 15px;
           cursor: pointer;
         }
-      }
 
-      .rightMenu {
-        padding: 20px;
-        background-color: white;
-        border: 0.5px solid lightgrey;
-        border-radius: 5px;
-        position: absolute;
-        top: 30px;
-        right: 0;
-        z-index: 9;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        color: #555;
+        .rightMenu {
+          padding: 20px;
+          background-color: white;
+          border: 0.5px solid lightgrey;
+          border-radius: 5px;
+          position: absolute;
+          top: 30px;
+          right: 0;
+          z-index: 9;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          color: #555;
 
-        span {
-          cursor: pointer;
+          span {
+            cursor: pointer;
+          }
         }
       }
     }
+
     .cards {
       display: flex;
       justify-content: space-between;

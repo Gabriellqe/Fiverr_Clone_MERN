@@ -3,7 +3,7 @@
     background-color: #f1fdf7;
     display: flex;
     justify-content: center;
-    padding: 100px 100px;
+    padding: 100px 0px;
 
     &.dark {
       background-color: #0d084d;
@@ -44,7 +44,7 @@
       width: 1400px;
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 200px;
       .item {
         display: flex;
         flex-direction: column;
