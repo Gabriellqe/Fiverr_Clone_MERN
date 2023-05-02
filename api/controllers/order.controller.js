@@ -4,9 +4,7 @@ import createError from "../utils/createError.js";
 
 export const intent = async (req, res, next) => {
   const stripe = new Stripe(process.env.STRIPE);
-
   const gig = await gigModel.findById(req.params.id);
-
   const paymentIntent = await stripe.paymentIntents.create({
     amount: gig.price * 100,
     currency: "usd",
@@ -44,21 +42,4 @@ export const getOrders = async (req, res, next) => {
   }
 };
 
-export const confirm = async (req, res, next) => {
-  try {
-    const orders = await orderModel.findOneAndUpdate(
-      {
-        payment_intent: req.body.payment_intent,
-      },
-      {
-        $set: {
-          isCompleted: true,
-        },
-      }
-    );
-
-    res.status(200).send("Order has been confirmed.");
-  } catch (err) {
-    next(err);
-  }
-};
+export const confirm = async (req, res, next) => {};
